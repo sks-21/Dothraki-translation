@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dothraki Translator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-heading">Dothraki Translator</div>
+    </nav>
+
+    <main>
+        <div>
+            <p>Are you a <b>Game of Thrones Fan ?</b> <br>
+                Have you read the novel - <b>A Song of Ice and Fire ?</b><br>
+                Curious to know about <span id="highlighter"> Dothraki's ?? </span> <br>
+                Check my app to know about their language !
+            </p>
+            <img src="images/dothraki-image.jpg" alt="dothraki image" />
+        </div>
+
+        <div class="container-translate">
+            <form id="input">
+                <span>Enter text in English 👇</span>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <div class="container-button">
+                    <button name="translate" id="translate">
+                        Translate to Dothraki
+                    </button>
+                    <button name="clear" id="clear">Clear</button>
+                </div>
+            </form>
+            <span>Translated text 👇</span>
+            <div id="translatedText"></div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-heading">Let's Connect &#128512 </div>
+        <ul class="list-non-bullet">
+            <li class="list-element-inline">
+                <a href="https://linkedin.com/in/shashank213" class="link-no-decoration">LinkedIn</a>
+            </li>
+            <li class="list-element-inline">
+                <a href="https://github.com/sks-21" class="link-no-decoration">Github</a>
+            </li>
+            <li class="list-element-inline">
+                <a href="https://www.instagram.com/_sks_21_/" class="link-no-decoration">Instagram</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
