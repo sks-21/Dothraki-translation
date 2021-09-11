@@ -10,7 +10,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: var(--off-white);
   /* color: white; */
 }
@@ -43,6 +43,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 
 #highlighter {
@@ -120,13 +121,13 @@ button:active {
 /* Footer */
 footer {
   background-color: var(--primary-color);
-  padding: 1.5em 0em;
+  padding: 1em 0em;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 0.2rem;
   border-top-left-radius: 2rem;
   text-align: center;
   margin-top: 1rem;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   color: white;
@@ -157,4 +158,37 @@ a:hover {
   color: black;
   transition: 0.2s;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  nav {
+    width: 110%;
+  }
+
+  img {
+    margin: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  #translatedText {
+    width: 300px;
+  }
+
+  .container-button {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  footer {
+    width: 110%;
+    margin-top: 100px;
+  }
 }
